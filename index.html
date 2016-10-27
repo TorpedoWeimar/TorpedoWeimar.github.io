@@ -6,9 +6,26 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+		<style>
+		.mySlides {display:none}
+		.w3-left, .w3-right, .w3-badge {cursor:pointer}
+		.w3-badge {height:13px;width:13px;padding:0}
+		</style>
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	
+<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/jquery.scrollgress.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/slider.js"></script>
 	</head>
-	<body class="landing">
+
+	<body class="landing" onload="currentDiv(1)">
 		<div id="page-wrapper">
 
 			<!-- Banner -->
@@ -86,7 +103,20 @@
 
 						</div>
 					</div>
-					<span class="image featured"><img src="images/DSC_0390.JPG" width="100%" alt="" /></span>
+					<span class="image featured">
+						<div class="w3-content w3-display-container" style="max-width:100%">
+						  <img class="mySlides" src="images/DSC_0390.JPG" style="width:100%">
+						  <img class="mySlides" src="images/DSC_0390.JPG" style="width:100%">
+						  <img class="mySlides" src="images/DSC_0390.JPG" style="width:100%">
+						  <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+						    <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+						    <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+						    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+						  </div>
+						</div>
+					</span>
 				</section>
 
 			<!-- CTA / Footer -->
@@ -108,15 +138,6 @@
 				</section>
 
 		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrollgress.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
 
 	</body>
 </html>
