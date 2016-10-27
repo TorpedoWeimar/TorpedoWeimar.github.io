@@ -32,5 +32,5 @@ for (i = 0; i < dots.length; i++) {
 x[slideIndex-1].style.display = "block";
 dots[slideIndex-1].className += " w3-white";
 
-var t = setTimeout("showDivs(slideIndex += 1)", 3000);
+var t = setTimeout("showDivs(slideIndex += 1)", 6000);
 }
